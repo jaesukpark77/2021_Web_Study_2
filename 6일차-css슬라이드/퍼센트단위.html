@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css슬라이드 #2</title>
+	<style>
+		*{margin:0;padding:0;}
+		li{list-style:none;}
+		.clearfix:after{content:"";display:block;clear:both;}
+		
+		input{display:none;}
+		
+		#slide{width:100%;height:300px;
+					 overflow:hidden;}
+		
+		#slide ul{width:400%;height:300px;
+							transition:1s;}
+		
+		#slide li{width:25%;height:300px;float:left;}
+		img{width:100%;}
+		
+		.scroll label{width:20px;height:20px;background-color:red;
+									border:2px solid #666;display:inline-block;
+									cursor:pointer;}
+		
+		.scroll{width:120px;margin:-40px auto;}
+		
+		#scroll1:checked~ul{margin-left:0px;}
+		#scroll2:checked~ul{margin-left:-100%;}
+		#scroll3:checked~ul{margin-left:-200%;}
+		#scroll4:checked~ul{margin-left:-300%;}
+	</style>
+</head>
+<body>
+		 <div id="slide">
+        <input type="radio" name="a" id="scroll1">
+        <input type="radio" name="a" id="scroll2">
+        <input type="radio" name="a" id="scroll3">
+        <input type="radio" name="a" id="scroll4">
+        
+        <ul class="clearfix">
+            <li><img src="1.png"></li>
+            <li><img src="2.png"></li>
+            <li><img src="3.png"></li>
+            <li><img src="4.png"></li>
+        </ul>
+    </div>
+    
+    <div class="scroll">
+            <label for="scroll1"></label>
+            <label for="scroll2"></label>
+            <label for="scroll3"></label>
+            <label for="scroll4"></label>
+    </div>
+</body>
+</html>

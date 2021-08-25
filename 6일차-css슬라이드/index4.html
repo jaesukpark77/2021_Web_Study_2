@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>css슬라이드 #4</title>
+    <style>
+        *{margin:0;padding:0}
+        li{list-style:none;}
+        .clearfix:after{content:"";display:block;clear:both;}
+        
+        input{display:none;}
+        
+        #slide{width:1000px;height:300px;
+                margin:0 auto;
+                border:3px solid black;
+                overflow:hidden;}
+        
+        #slide ul{width:4000px;height:300px;
+                    transition:1s;}
+        
+        #slide li{width:1000px;height:300px;float:left;}
+        
+        #slide li:nth-child(1){background-color:#123456;}
+        #slide li:nth-child(2){background-color:#987654;}
+        #slide li:nth-child(3){background-color:aqua;}
+        #slide li:nth-child(4){background-color:pink;}
+        
+        .scroll label{width:20px;height:20px;background-color:red;
+                        border:2px solid #666;display:inline-block;
+                        cursor:pointer;}
+        .scroll{width:120px;margin:20px auto;}
+        
+        #scroll1:checked~ul{margin-left:0px;}
+        
+        /*#scroll = label태그중 첫번째 버튼이 체크가 되면(클리기 되면) ul태그한테 margin-left:0px 넣어줘*/
+        
+        #scroll2:checked~ul{margin-left:-1000px;}
+        #scroll3:checked~ul{margin-left:-2000px;}
+        #scroll4:checked~ul{margin-left:-3000px;}
+    </style>
+</head>
+<body>
+    <div id="slide">
+        <input type="radio" name="a" id="scroll1">
+        <input type="radio" name="a" id="scroll2">
+        <input type="radio" name="a" id="scroll3">
+        <input type="radio" name="a" id="scroll4">
+        
+        <ul class="clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+     <div class="scroll">
+            <label for="scroll1"></label>
+            <label for="scroll2"></label>
+            <label for="scroll3"></label>
+            <label for="scroll4"></label>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>css슬라이드 #2</title>
+    <style>
+        *{margin:0;padding:0}
+        li{list-style:none;}
+        .clearfix:after{content:"";display:block;clear:both;}
+        
+        #scroll{width:80%;height:400px;margin:0 auto;overflow:auto;overflow-y:hidden;}
+        
+        /*%단위일 때 #scroll의 가로값은 마찬가지로 원하는 값을 작성해주면 되는데
+        %단위이기 때문에 웹사이트의 가로길이를 늘리고 줄일때 마다 #scroll의 값도 똑같이 변한다 (유동값이기 때문) 
+        세로값은 상관x*/
+        
+        #scroll_wrap{width:400%;height:400px;}
+        
+        /*%단위일 때 100% * li의 갯수 고정!*/
+        
+        #scroll_wrap li{width:25%;height:400px;float:left;}
+        
+        /*%단위일 때 li의 가로값은 100% / li의 갯수*/
+        
+        #scroll_wrap li:nth-child(1){background-color:#123456;}
+        #scroll_wrap li:nth-child(2){background-color:#987654;}
+        #scroll_wrap li:nth-child(3){background-color:orange;}
+        #scroll_wrap li:nth-child(4){background-color:violet;}
+    </style>
+</head>
+<body>
+    <div id="scroll">
+        <div id="scroll_wrap">
+            <ul class="clearfix">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

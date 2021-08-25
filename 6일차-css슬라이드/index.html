@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>css슬라이드 #1</title>
+    <style>
+        *{margin:0;padding:0}
+        li{list-style:none;}
+        .clearfix:after{content:"";display:block;clear:both;}
+        
+        #scroll{width:600px;height:400px;margin:0 auto;overflow:auto;}
+        /*px단위일 때 #scroll 가로와 세로값은 내가 웹사이트 상에서 슬라이드쇼를 얼마나 보여줄 것인지에 따라서 원하는 값을 알아서 넣어주면 된다*/
+        
+        #scroll_wrap{width:2400px;height:400px;}
+        /*px단위일 때 #scroll의 가로값 X li의 갯수 = 가로값
+        세로값은 #scroll의 세로값과 동일하게*/
+        
+        #scroll_wrap li{width:600px;height:400px;float:left;}
+        
+        #scroll_wrap li:nth-child(1){background-color:#123456}
+        #scroll_wrap li:nth-child(2){background-color:#987654}
+        #scroll_wrap li:nth-child(3){background-color:orange}
+        #scroll_wrap li:nth-child(4){background-color:pink}
+        
+        
+    </style>
+</head>
+<body>
+    <div id="scroll">
+        <div id="scroll_wrap">
+            <ul class="clearfix">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

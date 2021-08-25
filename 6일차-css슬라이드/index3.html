@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>css슬라이드 #2</title>
+    <style>
+        *{margin:0;padding:0;}
+        #a{width:100%;height:400px;
+            margin:0 auto;
+            overflow:auto;
+            overflow-y:hidden;}
+        
+        li{list-style:none;}
+        
+        #b{width:300%;height:400px;}
+        
+        li{width:33%;height:400px;float:left;margin-left:0.5%;}
+        
+        li:nth-child(1){margin-left:0px;}
+        
+        li:nth-child(1){background-color:red;}
+        li:nth-child(2){background-color:green;}
+        li:nth-child(3){background-color:blue;}
+        
+ 
+       
+    </style>
+</head>
+<body>
+        <div id="a">
+             <ul id="b">
+                 <li></li>
+                 <li></li>
+                 <li></li>
+            </ul>
+        </div>
+</body>
+</html>

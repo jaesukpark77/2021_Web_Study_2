@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>asdf</title>
+    <style>
+        *{margin:0;padding:0;}
+        .clearfix:after{content: "";display:block;clear:both;}
+        
+        /*float css속성은 사용하면 다른 태그랑 겹치거나 부모에 배경색이 사라지거나
+        기타 짜잘한 문제점이 발생한다 이것들을 해결해주기 위해
+        float가 들어간 태그를 감싸고 있는 부모태그한테 
+        원하는 .이름:after{content: "";display:block;clear:both;}
+        넣어줌으로써 float가 가지고 있는 고유의 버그를 없애줄 수 있다 이것을 float해제구문 합니다!*/
+        
+        li{list-style:none;}
+        /*float해제구문*/
+        
+        #a{background-color:red;}
+        
+        #a li{width:100px;height:100px;float:left;}
+        
+        #a li:nth-child(1){background-color:green;}
+        #a li:nth-child(2){background-color:blue;}
+        #a li:nth-child(3){background-color:pink;}
+        
+        #b{background-color:violet;}
+        
+         #b li{width:100px;height:100px;}
+        
+        #b li:nth-child(1){background-color:orange;}
+        #b li:nth-child(2){background-color:gray;}
+        #b li:nth-child(3){background-color:black;}
+    </style>
+</head>
+<body>
+        <ul id="a" class="clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        
+        <ul id="b">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+</body>
+</html>
