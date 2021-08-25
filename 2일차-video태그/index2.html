@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>video태그#2</title>
+    <style>
+        *{margin:0;padding:0;}
+        video{width:400px;margin:0 auto;display:block;}
+        img{width:300px;margin:0 auto;}
+        
+        .abc:after{content:"";display:block;clear:both;}
+        /*
+        div{width:300px;height:300px;
+            background-color:Green;margin:0 auto;}
+        
+        #b{background-color:blue;}*/
+        
+        #a{background-color:#123456;}
+        
+        #a div{width:200px;height:200px;
+                float:left;}
+        
+        #a div:nth-child(1){background-color:red;}
+        #a div:nth-child(2){background-color:green;}
+        #a div:nth-child(3){background-color:pink;}
+        
+        #b{width:200px;height:200px;background-color:orange;}
+    </style>
+</head>
+<body>
+    <video src="1.mp4" autoplay muted loop></video>
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <!--<div></div>
+    <div id="b"></div>-->
+    
+    <div id="a" class="abc">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <div id="b"></div>
+</body>
+</html>
