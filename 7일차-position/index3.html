@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>position #3</title>
+    <style>
+        #a{width:500px;height:500px;
+            background-color:#123456;
+            margin:0 auto;}
+        
+        #a div{width:100px;height:100px;margin:0 auto;}
+        
+        #a div:nth-child(1){background-color:#987654;position:absolute;}
+        #a div:nth-child(2){background-color:orange;}
+        #a div:nth-child(3){background-color:pink;}
+        
+        #scroll{height:3000px;}
+        
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <div id="scroll"></div>
+</body>
+</html>

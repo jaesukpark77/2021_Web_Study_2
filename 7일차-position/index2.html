@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>position #2</title>
+    <style>
+        *{margin:0;padding:0;}
+        #a{width:500px;height:500px;
+                background-color:red;
+                margin:0 auto;}
+        
+        #a div{width:100px;height:100px;margin:0 auto;}
+        
+        #a div:nth-child(1){background-color:green;position:relative;left:100px;top:100px;}
+        #a div:nth-child(2){background-color:blue;position:relative;top:100px;}
+        #a div:nth-child(3){background-color:orange;margin-top:100px;}
+        
+        /*css속성은 동일한 속성일 경우 밑에 작성한게 위에 작성한 것을 덮어씌워주는 구조입니다
+        
+        margin:0 auto = 세로값
+        margin-top/bottom 속성은 세로값속성
+        auto = 가로속성 / left-right와 사용하면 auto를 덮어씌워버린다.*/
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
