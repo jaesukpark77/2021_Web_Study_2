@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>시맨틱태그</title>
+    <style>
+        *{margin:0;padding:0;}
+        a{text-decoration:none;color:inherit;}
+        li{list-style:none;}
+        .clearfix:after{content:"";display:block;clear:both;}
+        
+        #wrap{width:1000px;margin:0 auto;
+              border-left:3px solid red;
+              border-right:3px solid red;}
+        
+        header{height:150px;background-color:#123456;}
+        
+        #logo{width:200px;height:50px;margin:0 auto;
+                background-color:#987654;
+                text-align:center;line-height:50px;
+                font-size:12px;}
+        
+        
+        nav{height:50px;background-color:orange;}
+        
+        nav li{width:184px;height:50px;float:left;
+                margin-left:20px;background-color:pink;
+                text-align:center;line-height:50px;}
+        
+        nav li:nth-child(1){margin-left:0px;}
+        
+        /*총길이 - 여백갯수 * 임의의 여백사이즈 / 내용물의 갯수
+        1000 -   (4   * 10~30 20) / 5
+        
+        여백갯수 = 내용물 - 1 만약 계산을 했을때 값이 딱 떨어지지 않으면
+        여백사이즈 값을 바꿔서 딱 떨어질때 까지 계산을 다시 해줘야한다*/
+        
+        main{background-color:aqua;}
+        
+        aside{width:300px;height:500px;background-color:deeppink;float:left;
+                text-align:center;line-height:500px;
+                font-size:35px;font-weight:bold;}
+        
+        section{width:680px;background-color:violet;
+                height:500px;float:left;margin-left:20px;}
+        
+        article{width:640px;height:100px;background-color:crimson;
+                margin:20px auto;text-align:center;
+                    line-height:100px;font-size:30px;color:white;}
+        
+        footer{height:100px;background-color:black;
+              text-align:center;line-height:100px;
+                color:white;font-size:35px;}
+    </style>
+</head>
+<body>
+   <div id="wrap">
+       <header>
+           <div id="logo">
+               <h1><a href="#">웹 사이트의 상단</a></h1>
+           </div>
+       </header>
+       
+       <nav>
+           <ul class="clearfix">
+               <li>웹</li>
+               <li>사이트</li>
+               <li>의</li>
+               <li>메인</li>
+               <li>메뉴들</li>
+           </ul>
+       </nav>
+       
+       <main class="clearfix">
+           <aside>사이드 광고</aside>
+           
+           <section>
+               <article>section</article>
+               <article>본문전체</article>
+               <article>article</article>
+               <article>본문내용</article>
+           </section>
+       </main>
+       
+       <footer>
+           웹 사이트의 최하단부
+       </footer>
+   </div>
+
+</body>
+</html>
