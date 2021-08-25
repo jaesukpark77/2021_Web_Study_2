@@ -1,0 +1,46 @@
+iframe 태그
+다른 웹사이트에 있는 내용을 가져오는 태그
+-> display:inline-block
+
+중앙정렬을 해주기 위해서는 display:block 속성으로 변경해서 margin:0 auto 사용하거나
+display:block 태그로 감싸준다음 똑같은 가로세로값을 넣어주고 margin:0 auto를 사용하는 방법
+
+iframe 태그를 감싸고 있는 display:block 태그한테 text-align:center 사용하기
+
+iframe 태그 같은 경우 width,height 태그 자체에 옵션으로 달려있기 때문에 별도로 css에서 조절해줄 필요가 없다.
+
+iframe 태그의 경우 video 태그와 별개로 옵션을 작성할 때 작성 위치가 src="https://www.youtube.com/embed/B8Cv4h_bt0?"
+src부분 큰따옴표가 끝나는 지점 왼쪽에 ?를 넣어주고 시작을 해야한다.
+
+옵션의 종류
+autoplay = 1 자동재생
+mute = 1 음소거
+controls = 0 (기본값은 1) 유튜브 동영상에 재생 일시정지 음소거 및 기타 컨트롤 버튼을 없애주는 기능
+
+controls 기능을 사용해도 로고 및 제목 기타 등등 없애지 못하는 존재들이 있다.
+loop = 1 동영상이 끝나면 다시 처음부터 다시 실행
+playlist = 유튜브 고유 코드
+
+iframe태그에서 loop기능의 경우 혼자서 사용하면 적용이 되지 않는다. 그래서 playlist코드와 함께 유튜브 src끝부분 고유 유튜브 코드 부분을 복사해서 playlist코드와 함께 유튜브 src끝부분 고유 유튜브 코드 부분을 복사해서 playlist= 붙여넣기 해주면 동영상 반복재생이 가능하다
+
+ex) src="https://www.youtube.com/embed/B8Cv4h_bt0I"
+loop = 1&playlist = B8Cv4h_bt0
+-----------------------------
+옵션사용시 autoplay=1&mute=1
+중간에 &들어가야 한다
+
+iframe 유튜브 장단점
+단점:
+1. video태그에 비해서 인터페이스 부분에서 짜잘한 내용이 많이 있어 몰입도가 떨어진다(디자인적으로 이쁘지 않다)
+
+2. 동영상 올린사람이 동영상 삭제하면 우리것도 같이 내려갑니다.
+
+장점:
+1. video 태그에 비해서 사이트에 로딩속도에 영향을 끼치진 않는다.
+
+2. 유튜브 동영상 - 채널 홍보가 된다.
+
+video 태그나 iframe 태그나 적절하게 디자인을 잘 해주면 차이가 없다
+
+★★ 유튜브 동영상을 정말 사용하고 싶은데 iframe이 아닌 video태그로 사용하고 싶다면 검색창에 youtube mp4 converter 검색후 사이트 접속해서 주소 입력란에 원하는 유튜브 동영상 넣어준 다음 컨버팅 해줘서 mp4파일로 다운로드 후 video태그 사용해주면 된다.
+(모든 동영상이 되는건 아니니깐 참고해서 사용할 것)
