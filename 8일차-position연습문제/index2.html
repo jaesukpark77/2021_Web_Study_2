@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>position 연습문제#1</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        #a{width:600px;height:600px;
+            background-color:#123456;
+            margin:0 auto;}
+        img{width:100px;height:100px;}
+        
+        li{width:100px;height:100px;}
+        
+        li:nth-child(1){position:relative;top:100px;}
+        li:nth-child(2){margin-top:100px;margin-left:100px;}
+        li:nth-child(3){margin-left:200px;}
+        li:nth-child(4){margin-left:300px;}
+        li:nth-child(5){margin-left:400px;}
+        li:nth-child(6){margin-left:500px;position:relative;
+                        top:-100px}
+        
+        li:nth-child(7){position:relative;top:-200px;}
+    </style>
+</head>
+<body>
+    <div id="a">
+        <ul>
+            <li><img src="1.jpg"></li>
+            <li><img src="2.jpg"></li>
+            <li><img src="3.jpg"></li>
+            <li><img src="4.jpg"></li>
+            
+            <li><img src="5.jpg"></li>
+            <li><img src="6.jpg"></li>
+            <li><img src="7.jpg"></li>   
+        </ul>
+    </div>
+</body>
+</html>
