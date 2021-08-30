@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>구글 개발자 도구</title>
+    <link href="android-icon-36x36.png" rel="icon">
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        
+        li{width:149px;height:149px;
+            margin:30px;background-color:#123456;
+            background-image:url("1.png");}
+        
+        /*#c li:nth-child(1){background-color:orange;}
+        
+        #a{background-color:red;}
+        .b{background-color:green;}*/
+        
+        li:nth-child(1){background-position:-19px -9px}
+        li:nth-child(2){background-position:-188px -9px}
+        li:nth-child(3){background-position:-356px -9px}
+        
+        li:nth-child(1):hover{background-position:-19px -179px;}
+        li:nth-child(2):hover{background-position:-188px -179px;}
+        li:nth-child(3):hover{background-position:-356px -179px;}
+        
+    </style>
+</head>
+<body>
+    <ul id="c">
+        <li id="a" class="b"></li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+    
+</body>
+</html>
