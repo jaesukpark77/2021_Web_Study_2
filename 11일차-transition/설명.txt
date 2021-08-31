@@ -1,0 +1,40 @@
+transition태그
+
+: 내가 원하는 태그에 사용하면 대상 태크가 어떠한 동작을 실행할 때 그 동작에 시간을 설정해서 애니메이션 효과를 발생시키는 css속성
+
+동작? hover, active 기타 등등
+
+★주의점: 동작구문에는 넣지말 것!
+
+hover,active 마우스를 올렸을 때 / 마우스를 클릭했을 때 동작
+마우스 땔 때에는 동작하지 않는다.
+(무조건 transition은 태그에 넣어준다!)
+
+transition:?s (?값에 원하는 시간 1s = 1초 / 0.5s = 0.5초)
+
+transition-delay:?s (내가 입력한 시간값 만큼의 시간이 흐른뒤에 transition적용)
+-----------------------------------------------------------------------------------
+transition-timing-function:
+내가 선택한 태그에 transition 애니메이션 효과를 변경해주는 css속성
+
+1. linear : 시작부터 끝까지 일정한 속도를 유지한다.
+
+2. ease-in : 처음에 느리게 시작
+
+3. ease-out : 처음에는 빠르게 시작 점점 느리게
+
+4. ease(기본값) : 처음에 느리게 시작 중간에 빨라지다가 마지막에 천천히
+
+5. ease-in-out : 처음에 느리게 시작 중간에 ease보다는 덜 빠르게 이동하고 마지막에 천천히
+---------------------------------------------------
+transition-property:css속성, css속성, .....
+
+hover, active 구문과 같이 사용하면 동작구문에 작성한
+css속성들의 애니메이션 시간을 개별적으로 적용 시켜주기 위해 사용하는 css속성
+
+transition-duration: property와 함께 사용해서 애니메이션 시간을 개별적으로 적용시키기 위한 css속성
+
+ex) transition-property:width,background-color,font-size;
+     transition-duration:1s,3s,10s
+
+= width는 1초동안, background-color는 3초동안, font-size는 5초 동안 변화한다
