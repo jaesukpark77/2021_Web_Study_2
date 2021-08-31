@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>transition #1</title>
+    <style>
+        *{margin:0;padding:0;}
+        #a{width:400px;height:400px;
+            background-color: #123456;
+            transition:3s;}
+        
+        #a:hover{/*background-color:red;margin-left:200px;*/
+                    border-radius:300px;}
+        
+        #b{width:400px;height:400px;
+            background-color:#987654;
+            transition:1s;
+            transition-delay:5s;}
+        
+        #b:hover{margin-left:100px;}
+    </style>
+</head>
+<body>
+    <div id="a">div태그 입니다</div>
+    <div id="b">div2태그 입니다</div>
+</body>
+</html>
