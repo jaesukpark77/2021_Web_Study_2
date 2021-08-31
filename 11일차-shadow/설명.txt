@@ -1,0 +1,15 @@
+shadow 태그
+
+shadow 대상 태그에 그림자를 넣어주는 css속성
+포토샵 drop shadow 기능과 동일하다
+
+text-shadow : 글자속성에만 그림자를 넣어주는 css속성
+
+box-shadow : 글자가 아닌 속성에 그림자를 넣어주는 css속성
+
+★ text-shadow, box-shadow 모두 대상 태그가 외형이 변경이 되더라도 그에 맞춰서 그림자도 같이 외형이 변경이 된다!
+
+box-shadow:x축값 y축값 흩뿌려지는값 색상
+
+추천값(가장 그림자로 보기에 괜찮은 겂)
+box-shadow:5px 5px 4px grey
