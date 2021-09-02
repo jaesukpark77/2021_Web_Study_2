@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>드롭다운 애니메이션</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        
+        .nav{width:1000px;}
+        
+        .nav li{width:200px;font-size:14px;background-color:black;
+                text-align:center;border-bottom:1px solid #808080;
+                line-height:40px;color:white;cursor:pointer;float:left}
+        
+        .submenu li{font-size:12px;background-color:#999999;
+                line-height:40px;border-bottom:1px solid #777777;}
+        
+        .nav li:hover{color:red;}
+        
+        .submenu li:hover{background-color:burlywood;}
+        
+        /*.submenu{opacity:0;transition:1s}
+        
+        .nav > li:hover .submenu{opacity:1;}*/
+        
+        .submenu{height:0px;overflow:hidden;background-color:orange;transition:1s;}
+        
+        .nav > li:hover .submenu{height:200px;}
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>MENU-1
+            <ul class="submenu">
+                <li>menu1-1</li>
+                <li>menu1-2</li>
+                <li>menu1-3</li>
+                <li>menu1-4</li>
+                <li>menu1-5</li>
+            </ul>
+        </li>
+        
+        <li>MENU-2
+            <ul class="submenu">
+                <li>menu2-1</li>
+                <li>menu2-2</li>
+                <li>menu2-3</li>
+                <li>menu2-4</li>
+                <li>menu2-5</li>
+            </ul>
+        </li>
+        
+        <li>MENU-3
+            <ul class="submenu">
+                <li>menu3-1</li>
+                <li>menu3-2</li>
+                <li>menu3-3</li>
+                <li>menu3-4</li>
+                <li>menu3-5</li>
+            </ul>
+        </li>
+        
+        <li>MENU-4
+            <ul class="submenu">
+                <li>menu4-1</li>
+                <li>menu4-2</li>
+                <li>menu4-3</li>
+                <li>menu4-4</li>
+                <li>menu4-5</li>
+            </ul>
+        </li>
+        
+        <li>MENU-5
+            <ul class="submenu">
+                <li>menu5-1</li>
+                <li>menu5-2</li>
+                <li>menu5-3</li>
+                <li>menu5-4</li>
+                <li>menu5-5</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
