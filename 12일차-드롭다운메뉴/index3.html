@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>드롭다운 연습문제</title>
+    <style>
+        *{margin:0;padding:0;}
+        li{list-style:none;}
+        .clearfix:after{content:"";display:block;clear:both;}
+        
+        #one{width:200px;background-color:orange;
+            margin:0 auto;text-align:center;line-height:30px;}
+        
+        .two{width:1000px;position:absolute;left:50%;margin-left:-500px;
+                display:none;}
+        
+        .two li{width:235px;float:left;margin-left:20px;}
+        
+        .two li:nth-child(4n+1){margin-left:0px;}
+        
+        #one > li:hover .two{display:block;}
+    </style>
+</head>
+<body>
+    <ul id="one">
+        <li>시계
+            <ul class="two clearfix">
+                <li><img src="img/1.jpg"></li>
+                <li><img src="img/2.jpg"></li>
+                <li><img src="img/3.jpg"></li>
+                <li><img src="img/4.jpg"></li>
+                
+                <li><img src="img/5.jpg"></li>
+                <li><img src="img/6.jpg"></li>
+                <li><img src="img/7.jpg"></li>
+                <li><img src="img/8.jpg"></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

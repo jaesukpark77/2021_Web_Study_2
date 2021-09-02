@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>드롭다운 메뉴#1</title>
+    <style>
+        *{margin:0;padding:0}
+        .clearfix:after{content:"";display:block;clear:both;}
+        li{list-style:none;}
+        
+        #one{margin-top:200px;margin-left:200px;}
+        
+        #one > li{float:left;background-color:pink;}
+        
+        #one li{width:200px;text-align:center;line-height:40px;}
+        
+        .two li{background-color:#123456;color:white;}
+        
+        .two{display:none;}
+        
+        /*#one > li:hover .two{display:block;}
+        한 번에 하나의 메뉴만 나오길 원한다면*/
+        
+        #one:hover .two{display:block;}
+        /*한 번에 모든 메뉴가 전부 나오길 원한다면*/
+    </style>
+</head>
+<body>
+    <ul id="one" class="clearfix">
+        <li>과일종류
+            <ul class="two">
+                <li>사과</li>
+                <li>딸기</li>
+                <li>포도</li>
+            </ul>
+        </li>
+        
+        <li>동물종류
+            <ul class="two">
+                <li>사자</li>
+                <li>하마</li>
+                <li>기린</li>
+            </ul>
+        </li>
+        
+        <li>운동종류
+            <ul class="two">
+                <li>축구</li>
+                <li>배구</li>
+                <li>농구</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

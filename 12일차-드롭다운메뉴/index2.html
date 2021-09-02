@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>드롭다운 메뉴#2</title>
+    <style>
+        *{margin:0;padding:0}
+
+        #a{width:400px;height:400px;
+            background-color:red;}
+        
+        #b{width:100px;height:100px;
+            background-color: blue;
+            transition:2s;
+            /*display:none;*/
+            opacity:0}
+        
+        #a:hover #b{/*display:block;*/
+                    opacity:1}
+        
+        /*transition 적용되기 위한 가장 중요한 조건
+        태그가 일단 존재는 해야한다
+        display:none -> 대상 태그를 웹사이트에서 삭제시키는 개념
+        display:none으로 삭제시키는 태그를 -> display:block으로 복원해주는 과정*/
+        
+        
+    </style>
+</head>
+<body>
+    <!--왜 마우스를 올리면 하나의 메뉴만 나오는 원리가 무엇일까?-->
+    <div id="a">
+        <div id="b"></div>
+    </div>
+</body>
+</html>
