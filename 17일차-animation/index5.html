@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>animation #5</title>
+    <style>
+        *{margin:0;padding:0;}
+        h1, h2, h3{text-align:center;
+                    height:100px;
+                    animation:abc 1s;
+                    animation-fill-mode:backwards;}
+        
+        @keyframes abc{
+            0%{transform:translateY(100px);opacity:0;}
+        }
+        
+        h2{animation-delay:1s;}
+        
+        h3{animation-delay:2s;}
+        
+        h4{text-align:center;height:100px;
+            animation:bbb 2s;
+            animation-fill-mode:forwards}
+        
+        @keyframes bbb{
+            100%{color:orange;transform:translateY(300px)}
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요 h1태그 입니다</h1>
+    <h2>안녕하세요 h2태그 입니다</h2>
+    <h3>안녕하세요 h3태그 입니다</h3>
+    
+    <h4>안녕하세요 h4태그 입니다</h4>
+    
+</body>
+</html>

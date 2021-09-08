@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>animation #3</title>
+    <style>
+        *{margin:0;padding:0;}
+        
+        #a{width:400px;height:400px;
+            background-color:red;
+            animation:abc 3s;
+            /*animation-delay:3s;*/
+            animation-timing-function:linear;}
+        
+        @keyframes abc{
+            50%{margin-left:500px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+</body>
+</html>
